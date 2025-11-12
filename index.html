@@ -5,57 +5,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Happy Birthday My Love 💖</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500;700&display=swap');
+
     body {
       font-family: 'Poppins', sans-serif;
-      text-align: center;
       background: linear-gradient(to bottom right, #ffe6eb, #fff6f8);
       color: #444;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
+
     h1 {
-      font-size: 2.5rem;
-      margin-top: 50px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
       color: #e91e63;
-      text-shadow: 1px 1px #fff;
+      margin-top: 50px;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.6);
     }
-    p {
-      font-size: 1.2rem;
-      margin: 20px;
+
+    .message {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 1.3rem;
+      background: rgba(255,255,255,0.6);
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      line-height: 1.7;
     }
+
     .photos {
       display: flex;
-      justify-content: center;
       flex-wrap: wrap;
-      gap: 15px;
-      margin-top: 30px;
+      justify-content: center;
+      margin: 40px auto;
+      max-width: 900px;
+      gap: 10px;
     }
+
     .photos img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
       border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
     }
+
+    /* Randomized collage effect */
+    .photos img:nth-child(1) { width: 180px; height: 240px; transform: rotate(-3deg); }
+    .photos img:nth-child(2) { width: 250px; height: 250px; transform: rotate(2deg); }
+    .photos img:nth-child(3) { width: 200px; height: 270px; transform: rotate(-1deg); }
+    .photos img:nth-child(4) { width: 260px; height: 200px; transform: rotate(3deg); }
+    .photos img:nth-child(5) { width: 230px; height: 280px; transform: rotate(-2deg); }
+
+    .photos img:hover {
+      transform: scale(1.05);
+      z-index: 2;
+    }
+
     footer {
       margin-top: 40px;
       font-size: 0.9rem;
-      color: #999;
+      color: #888;
+    }
+
+    .love {
+      margin: 40px auto 60px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      color: #ff1e56;
+      text-shadow: 2px 2px 8px rgba(255, 105, 180, 0.4);
+      animation: heartbeat 1.5s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(1.1); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.1); }
     }
   </style>
 </head>
 <body>
-  <h1>Happy Birthday, My Pookie 💖</h1>
-  <p>You make every day brighter, but today is extra special — it’s all about you.  
-     I’m so lucky to share my life with you. Cheers, to the many more days to come. 💐</p>
+  <h1>Happy Birthday, My Love 💖</h1>
 
-  <div class="photos">
-    <!-- Replace the image sources below with your own -->
-    <img src="photo1.jpg" alt="Us together">
-    <img src="photo2.jpg" alt="Her smile">
-    <img src="photo3.jpg" alt="Special moment">
+  <div class="message">
+    <p>
+      You fill my life with laughter, love, and endless warmth.  
+      Every moment with you is a beautiful memory I’ll cherish forever.  
+      On this special day, I just want you to know — you are my heart, my world, my everything. 💐
+    </p>
   </div>
 
-  <footer>Made with ❤️ by Sheejan Tripathi</footer>
+  <div class="photos">
+    <!-- Replace these image sources with your own -->
+    <img src="photo1.jpg" alt="Memory 1">
+    <img src="photo2.jpg" alt="Memory 2">
+    <img src="photo3.jpg" alt="Memory 3">
+    <img src="photo4.jpg" alt="Memory 4">
+    <img src="photo5.jpg" alt="Memory 5">
+  </div>
+
+  <footer>Made with ❤️ by [Your Name]</footer>
+
+  <div class="love">I Love You 💞</div>
 </body>
 </html>
